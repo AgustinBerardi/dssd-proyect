@@ -1,5 +1,6 @@
 class UnityController < ApplicationController
   def index
+    @unity = Unity.all
   end
 
   def new

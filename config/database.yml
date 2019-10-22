@@ -44,11 +44,9 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
 production:
-  <<: *default
-  database: dssd-proyect_production
-  username: dssd-proyect
-  password: <%= ENV['DSSD-PROYECT_DATABASE_PASSWORD'] %>
+  url: <%= ENV['CLEARDB_DATABASE_URL'] %>
+#
+# production:
+#   <<: *default
+#   password: <%= ENV['DSSD-PROYECT_DATABASE_PASSWORD'] %>
