@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191019163139) do
+ActiveRecord::Schema.define(version: 20191024232831) do
 
   create_table "internal_unities", force: :cascade do |t|
     t.string   "apellido",            limit: 255
@@ -60,12 +60,11 @@ ActiveRecord::Schema.define(version: 20191019163139) do
   end
 
   create_table "unities", force: :cascade do |t|
-    t.string   "coordenadas",  limit: 255
-    t.string   "email",        limit: 255
-    t.string   "nombre",       limit: 255
-    t.integer  "numeroUnidad", limit: 4
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.string  "latitud",      limit: 255
+    t.string  "longitud",     limit: 255
+    t.string  "email",        limit: 255
+    t.string  "nombre",       limit: 255
+    t.integer "numeroUnidad", limit: 4
   end
 
   create_table "videoconferencia", id: false, force: :cascade do |t|
