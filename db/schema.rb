@@ -60,8 +60,12 @@ ActiveRecord::Schema.define(version: 20191024232831) do
   end
 
   create_table "unities", force: :cascade do |t|
-    t.string  "latitud",      limit: 255
-    t.string  "longitud",     limit: 255
+    t.string  "latitude",      limit: 255
+    t.string  "longitude",     limit: 255
+    t.string  "calle",        limit: 15
+    t.string  "localidad",    limit: 15
+    t.string  "provincia",    limit: 15
+    t.integer "numero",       limit: 4
     t.string  "email",        limit: 255
     t.string  "nombre",       limit: 255
     t.integer "numeroUnidad", limit: 4
