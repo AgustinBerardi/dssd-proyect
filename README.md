@@ -1,6 +1,6 @@
 == README
 
-##Dependencies
+## Dependencies
 - Ruby 2.5.1
 - Rails 5.1.2
 - Json Web Token (JWT)
@@ -9,7 +9,7 @@
 - Cloudinary
 - Carrierwave
 
-##Installation
+## Installation
 - Clone this project
 
         $ git clone https://github.com/AgustinBerardi/dssd-proyect.git
@@ -34,7 +34,7 @@
         
         $ rails s
         
-##Useful commands 
+## Useful commands 
 - Autocompleta las coordenadas de las Unidades Juridicas que se encuentren en la bd
 
         $ rake geocode:all CLASS=Unity SLEEP=0.25 BATCH=100
